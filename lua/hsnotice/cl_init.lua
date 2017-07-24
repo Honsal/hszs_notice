@@ -50,9 +50,8 @@ end
 function HSNotice.Advertisement(pl, text, tc, dd)
 	local text = string.lower(text)
 	if string.find(string.lower(text), "vip") or string.find(text, "브압") or string.find(text, "브앞") then
-		chat.AddText(Color(45, 255, 17), "VIP는 프리미엄으로 바뀌었습니다.")
-		chat.AddText(Color(232, 170, 12), "신청은 !reqp로 하실 수 있으며,")
-		chat.AddText(Color(13, 255, 173), "자세한 내용은 !motd 최하단 프리미엄 섹션을 참조하세요.")
+		chat.AddText(Color(45, 255, 17), "프리미엄 안내는 !premium 을 채팅창에 쳐보세요.")
+		chat.AddText(Color(232, 170, 12), "더 자세한 안내는 네이버 카페 프리미엄 공지에 있습니다.")
 	end
 end
 hook.Remove("OnPlayerChat", "HSNotice.Advertisement", HSNotice.Advertisement)
